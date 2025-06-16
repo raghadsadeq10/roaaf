@@ -93,6 +93,9 @@ const HomePage = ({ onAddToCart, searchTerm = '' }) => {
               </div>
               <div className="product-info">
                 <p className="product-name">{product.name}</p>
+                  </div>
+                {product.description && <p className="product-description">{product.description}</p>}
+              </div>
                 <div className="price-cart">
                   <span
                     className="cart-icon"
@@ -103,9 +106,7 @@ const HomePage = ({ onAddToCart, searchTerm = '' }) => {
                     🛒
                   </span>
                   <span className="price">{product.price} شيكل</span>
-                </div>
-                {product.description && <p className="product-description">{product.description}</p>}
-              </div>
+              
             </div>
           ))
         ) : (
